@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "es5",
+    
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Absolute paths
+    "baseUrl": "./src",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"]
+    },
+  },
+
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
